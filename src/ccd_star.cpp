@@ -1,8 +1,17 @@
 #include "ekf.hpp"
 
 
-ccd_star::ccd_star(float _Swath, int _Swath, _OverlapRatio){
-  overlap = _OverlapRatio
+ccd_star::ccd_star(float _Swath, int _Swath_grid, float height, float width, float _OverlapRatio){
+  overlap = _OverlapRatio;
+
+  Swath_grid = _Swath_grid;
+  Swath = _Swath;
+
+  GridSize =  int(Swath/Swath_grid);
+}
+
+ccd_star::init_map(unsigned char* _map){
+  map = _map;
 
 }
 

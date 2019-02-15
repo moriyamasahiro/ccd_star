@@ -41,7 +41,7 @@ class ccd_star
       int Height_grid, Width_grid;
 
       //robot size in grid
-      int RobotSize_grid
+      int RobotSize_grid;
 
       //height and width of field in meter
       float Height, Width;
